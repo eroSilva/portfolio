@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 		        options: {
 		        	online: true,
 		        	watchTask: true,
-		            proxy: "localhost/gosuperinternacional.com.br/front/site"
+		            proxy: "localhost/portfolio"
 		        }
 		    }
 		},
