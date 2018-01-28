@@ -1,0 +1,36 @@
+// Tiporafia CSS
+// ------------------------
+
+h1, h2, h3{
+    font-weight: 200;
+    line-height: 1;
+}
+
+p:not(:last-child){
+    margin-bottom: 15px;
+}
+
+
+// Títulos principais
+.main-title{
+    font-family: $title-font-family;
+    font-size: em(72px);
+    font-weight: 500;
+}
+
+.main-subtitle{
+    font-size: em(52px);
+    margin-bottom: $padding-base*2;
+    padding-left: 46px;
+}
+
+.main-description{
+    font-size: em(26px);
+}
+
+
+// Títulos de sessão
+.section-title{
+    font-size: em(36px);
+    margin-bottom: $padding-base;
+}

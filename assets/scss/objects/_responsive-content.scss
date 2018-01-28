@@ -1,0 +1,26 @@
+// 
+// Responsive content
+// -----------------------------------------------------
+
+%responsive-content{
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+
+	> img,
+    > canvas,
+    > iframe{
+		position: absolute;
+        max-width: none;
+        width: 101%;
+	}
+
+    > img,
+    > canvas{
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

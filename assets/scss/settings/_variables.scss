@@ -1,0 +1,108 @@
+// 
+// Variables
+// -----------------------------------------------------
+
+
+
+// Container e Grid
+// --------------------------
+$width-container-lg             : 960px !default;
+$width-container-md             : 980px !default;
+$width-container-sm             : 720px !default;
+$width-container-xs             : 552px !default;
+$padding-base                   : 10px !default;
+
+
+
+// Colors
+// --------------------------
+$color-primary                  : #f14a56 !default;
+$color-secondary                : #00425f !default;
+$color-tertiary                 : #fea072 !default;
+
+$white                          : #fff !default;
+$black                          : #000 !default;
+$gray                           : #3d3d3d !default;
+$gray-dark                      : darken($gray, 5%) !default;
+$gray-light                     : lighten($gray, 50%) !default;
+
+$color-text                     : $gray !default;
+
+
+
+// Fonts
+// --------------------------
+$base-font-family               : 'PT Sans', sans-serif !default;
+$title-font-family              : 'Expletus Sans', cursive !default;
+$base-size                      : 18px !default;
+$base-line-height               : 1px !default;
+$base-font-weight               : normal !default;
+
+
+// Grid
+// --------------------------
+$grid-gutter-width              : $padding-base;
+$grid-columns                   : 12;
+
+
+
+// Media queries
+// --------------------------
+$screen-xs                      : 480px !default;
+$screen-sm                      : 768px !default;
+$screen-md                      : 992px !default;
+$screen-lg                      : 1200px !default;
+$screen-xlg                     : 1600px !default;
+$screen-xxlg                    : 1900px !default;
+ 
+$screen-xs-max                  : ($screen-sm - 1) !default;
+$screen-sm-max                  : ($screen-md - 1) !default;
+$screen-md-max                  : ($screen-lg - 1) !default;
+$screen-lg-max                  : ($screen-xlg - 1) !default;
+$screen-xlg-max                 : ($screen-xxlg - 1) !default;
+
+$screen-xs-min                  : $screen-xs !default;
+$screen-sm-min                  : $screen-sm !default;
+$screen-md-min                  : $screen-md !default;
+$screen-lg-min                  : $screen-lg !default;
+$screen-xlg-min                 : $screen-xlg !default;
+
+$breakpoint-max                 : $screen-sm-max !default;
+$breakpoint-min                 : $screen-md-min !default;
+
+
+
+// Bootstrap
+// --------------------------
+
+// Defaults
+$border-radius-lg               : .3rem !default;
+
+
+// Modals
+$modal-inner-padding            : $padding-base*2 !default;
+
+$modal-dialog-margin            : $padding-base !default;
+$modal-dialog-margin-y-sm-up    : $padding-base*3 !default;
+
+$modal-title-line-height        : normal !default;
+
+$modal-content-bg               : $white !default;
+$modal-content-border-color     : rgba($gray,.1) !default;
+$modal-content-border-width     : 1px !default;
+$modal-content-box-shadow-xs    : 0 3px 9px rgba($black,.5) !default;
+$modal-content-box-shadow-sm-up : 0 5px 15px rgba($black,.5) !default;
+
+$modal-backdrop-bg              : $gray !default;
+$modal-backdrop-opacity         : .5 !default;
+$modal-header-border-color      : $modal-content-border-color !default;
+$modal-footer-border-color      : $modal-header-border-color !default;
+$modal-header-border-width      : $modal-content-border-width !default;
+$modal-footer-border-width      : $modal-header-border-width !default;
+$modal-header-padding           : $padding-base*2  !default;
+
+$modal-lg                       : 1200px !default;
+$modal-md                       : 470px !default;
+$modal-sm                       : 300px !default;
+
+$modal-transition               : transform .3s ease-out !default;

@@ -1,0 +1,36 @@
+// Container do site
+// ------------------------
+
+.container{
+    max-width: $width-container-lg;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header{
+    margin: $padding-base*8 0;
+}
+
+.main-content{
+    background: $white;
+    padding-bottom: 1px;
+    margin-bottom: 70px;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $padding-base*2;
+    background: $color-text;
+    color: $white;
+    font-size: em(12px);
+    text-align: center;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+    z-index: -1;
+
+    p{
+        margin: 0;
+    }
+}

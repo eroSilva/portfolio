@@ -1,0 +1,18 @@
+// Sessões
+// ------------------------
+
+.sections{
+    margin: $padding-base*6 0;
+
+    ul{
+        list-style-position: inside;
+    }
+}
+
+.section-projects{
+    margin-bottom: $padding-base*8;
+
+    .gallery-list{
+        margin-top: -200px;
+    }
+}
