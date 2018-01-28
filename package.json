@@ -1,0 +1,13 @@
+{
+  "name": "gosuper",
+  "version": "2.0.0",
+  "title": "Frontend do site da Gosuper Internacional",
+  "description": "Frontend do site da Gosuper Internacional",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-uglify": "^3.0.1"
+  }
+}
