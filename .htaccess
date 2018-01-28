@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^$ views/index.html [L]
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|map)$
+RewriteRule .* views/index.html [L]
