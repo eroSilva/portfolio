@@ -9,12 +9,23 @@
 
 .main-header{
     margin: $padding-base*8 0;
+    color: $color-text;
+
+    .social-links{
+        margin-left: -8px;
+        margin-right: -#{round($padding-base/2)};
+        font-size: em(22px);
+    }
+
+    .social-links a{
+        color: inherit;
+    }
 }
 
 .main-content{
     background: $white;
     padding-bottom: 1px;
-    margin-bottom: 70px;
+    margin-bottom: 105px;
 }
 
 .main-footer{
@@ -25,12 +36,17 @@
     padding: $padding-base*2;
     background: $color-text;
     color: $white;
-    font-size: em(12px);
+    font-size: em(14px);
     text-align: center;
     box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
     z-index: -1;
 
-    p{
-        margin: 0;
+    .social-links{
+        @include flexbox((justify-content: center));
+
+        a{
+            color: $white;
+            font-size: em(30px);
+        }
     }
 }
