@@ -45,28 +45,12 @@ module.exports = function(grunt) {
 		        }
 		    }
 		},
-
-
-		// Uglify
-		// @url: https://www.npmjs.com/package/grunt-contrib-uglify
-		uglify: {
-			options: {
-	        	sourceMap: true
-			},
-			site: {
-				files: [{
-					src: [''],
-					dest: ''
-				}]
-			}
-		}
 	});
 
 
 	// Load plugins
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
 	// Define tasks
