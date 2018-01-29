@@ -1,0 +1,49 @@
+// Impressão
+// ------------------------
+
+@media print{
+    body{
+        font-size: 16px !important;
+    }
+
+    .main-subtitle,
+    .main-footer,
+    .section-projects,
+    .social-links{
+        display: none !important;
+    }
+
+    .main-content,
+    .main-description{
+        margin: 0 !important;
+    }
+
+    .main-header{
+        margin-top: 0 !important;
+        margin-bottom: $padding-base*3 !important;
+        padding-bottom: $padding-base*1.5 !important;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+
+    .main-title{
+        font-size: em(26px) !important;
+        font-weight: 700;
+    }
+
+    .main-description{
+        font-size: em(20px) !important;
+    }
+    
+    .sections{
+        margin: $padding-base*3 0;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .section-title{
+        font-size: em(18px) !important;
+        font-weight: 700 !important;
+    }
+}

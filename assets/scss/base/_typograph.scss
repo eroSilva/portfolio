@@ -8,8 +8,9 @@ h1, h2, h3{
     line-height: 1;
 }
 
-p:not(:last-child){
-    margin-bottom: 15px;
+p:not(:last-child),
+ul:not(:last-child){
+    margin-bottom: $padding-base;
 }
 
 
@@ -59,4 +60,15 @@ p:not(:last-child){
             opacity: .8;
         }
     }
+}
+
+
+// Pequenas descrições
+.small{
+    opacity: .7;
+    font-size: 90%;
+}
+
+.least-highlight{
+    text-decoration: line-through;
 }
