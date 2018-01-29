@@ -1,6 +1,8 @@
 // Tiporafia CSS
 // ------------------------
 
+
+// Títulos
 h1, h2, h3{
     font-weight: 200;
     line-height: 1;
@@ -8,6 +10,12 @@ h1, h2, h3{
 
 p:not(:last-child){
     margin-bottom: 15px;
+}
+
+
+// Ícones
+[class^="icon-"]:before, [class*=" icon-"]:before{
+    display: block;
 }
 
 
@@ -31,6 +39,24 @@ p:not(:last-child){
 
 // Títulos de sessão
 .section-title{
-    font-size: em(36px);
+    font-size: em(42px);
     margin-bottom: $padding-base;
+}
+
+
+// Links das redes sociais
+.social-links{
+    list-style: none;
+    @include flexbox((display: flex));
+
+    a{
+        text-decoration: none;
+        display: block;
+        padding: 0 round($padding-base/2);
+        @include transition(opacity .2s);
+
+        &:not(:hover){
+            opacity: .8;
+        }
+    }
 }
