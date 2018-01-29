@@ -45,14 +45,47 @@ module.exports = function(grunt) {
 		        }
 		    }
 		},
+
+
+		// Critical CSS
+		// @url: https://www.npmjs.com/package/grunt-criticalcss
+		criticalcss: {
+		    site: {
+	            options: {
+	                url: 'http://localhost/portfolio',
+	                width: 1366,
+	                height: 700,
+	                outputfile: 'assets/css/critical/critical.css',
+	                filename: 'assets/css/app.css',
+	                buffer: 800*1024,
+	                ignoreConsole: false
+	            }
+	        }
+		},
+
+
+		// CSS Min
+		// @url: https://github.com/gruntjs/grunt-contrib-cssmin
+		cssmin: {
+		  	site: {
+	      		expand: true,
+			    cwd: 'assets/css/critical/',
+			    src: ['*.css'],
+			    dest: 'assets/css/critical/',
+			    ext: '.min.css'
+		  	}
+		}
 	});
 
 
 	// Load plugins
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-criticalcss');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
 	// Define tasks
 	grunt.registerTask('site', ['browserSync:site', 'compass:site']);
+	grunt.registerTask('critical', ['criticalcss:site', 'cssmin:site']);
 };

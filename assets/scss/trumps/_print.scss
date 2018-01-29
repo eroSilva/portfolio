@@ -14,20 +14,30 @@
     }
 
     .main-content,
-    .main-description{
+    .main-description,{
         margin: 0 !important;
+    }
+    
+    .contact-list{
+        margin-top: round($padding-base/2);
+        margin-bottom: $padding-base;
+
+        .mail a,
+        .phone{
+            opacity: 1 !important;
+        }
     }
 
     .main-header{
         margin-top: 0 !important;
         margin-bottom: $padding-base*3 !important;
         padding-bottom: $padding-base*1.5 !important;
-        border-bottom: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1) !important;
     }
 
     .main-title{
         font-size: em(26px) !important;
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     .main-description{
@@ -35,15 +45,27 @@
     }
     
     .sections{
-        margin: $padding-base*3 0;
+        margin: $padding-base*3 0 !important;
 
         &:last-child{
-            margin-bottom: 0;
+            margin-bottom: 0 !important;
         }
     }
 
     .section-title{
         font-size: em(18px) !important;
         font-weight: 700 !important;
+    }
+
+
+    // Elementos que trocam de valor
+    [data-print]{
+        color: transparent !importanta;
+
+        &:before{
+            font-family: $base-font-family;
+            content: attr(data-print);
+            color: $color-text;
+        }
     }
 }

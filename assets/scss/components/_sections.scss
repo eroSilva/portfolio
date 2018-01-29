@@ -11,8 +11,10 @@
 
 .section-projects{
     margin-bottom: $padding-base*8;
-
-    .gallery-list{
-        margin-top: -200px;
-    }
+	
+	@media(min-width: $screen-sm-min){
+		.gallery-list{
+	        margin-top: -275px;
+    	}
+	}
 }

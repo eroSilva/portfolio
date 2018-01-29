@@ -7,6 +7,8 @@
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-compass": "^1.1.1"
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-criticalcss": "^2.1.0"
   }
 }

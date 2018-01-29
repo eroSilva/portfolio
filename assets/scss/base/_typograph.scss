@@ -8,9 +8,24 @@ h1, h2, h3{
     line-height: 1;
 }
 
-p:not(:last-child),
-ul:not(:last-child){
+
+// Parágrafos
+p:not(:last-child){
     margin-bottom: $padding-base;
+}
+
+
+// Links
+a{
+    color: $color-text;
+    opacity: .7;
+    text-decoration: none;
+    @include transition(opacity .2s);
+
+    &:hover,
+    &:focus{
+        opacity: 1;
+    }
 }
 
 
@@ -23,42 +38,82 @@ ul:not(:last-child){
 // Títulos principais
 .main-title{
     font-family: $title-font-family;
-    font-size: em(72px);
     font-weight: 500;
+
+    @media(min-width: $screen-sm-min){
+        font-size: em(72px);
+    }
+
+    @media(max-width: $screen-xs-max){
+        font-size: em(46px);
+    }
 }
 
 .main-subtitle{
-    font-size: em(52px);
     margin-bottom: $padding-base*2;
-    padding-left: 46px;
+
+    @media(min-width: $screen-sm-min){
+        font-size: em(52px);
+        padding-left: 46px;
+    }
+
+    @media(max-width: $screen-xs-max){
+        font-size: em(28px);
+        padding-left: 30px;
+    }
 }
 
 .main-description{
-    font-size: em(26px);
+    @media(min-width: $screen-sm-min){
+        font-size: em(26px);
+    }
+
+    @media(max-width: $screen-xs-max){
+        font-size: em(18px);
+    }
 }
 
 
 // Títulos de sessão
 .section-title{
-    font-size: em(42px);
     margin-bottom: $padding-base;
+
+    @media(min-width: $screen-sm-min){
+        font-size: em(42px);
+    }
+
+    @media(max-width: $screen-xs-max){
+        font-size: em(26px);
+    }
 }
 
 
-// Links das redes sociais
+// Listas
 .social-links{
-    list-style: none;
+    @extend %list-style-none;
     @include flexbox((display: flex));
 
     a{
         text-decoration: none;
         display: block;
         padding: 0 round($padding-base/2);
-        @include transition(opacity .2s);
+    }
+}
 
-        &:not(:hover){
-            opacity: .8;
-        }
+.contact-list{
+    margin: $padding-base*2 0;
+    @extend %list-style-none;
+
+    .phone{
+        opacity: .7;
+    }
+}
+
+dl{
+    margin-top: $padding-base*1.5;
+
+    dt{
+        margin-bottom: $padding-base;
     }
 }
 
