@@ -11,6 +11,11 @@
         box-shadow: 0 0 0 1px rgba(0,0,0,.1);
         @include transition(.2s);
         @extend %responsive-content;
+
+        &:not(:hover):not(:focus){
+            opacity: .3;
+            @include filter(grayscale(100%));
+        }
     }
 
     @media(min-width: $screen-sm-min){
@@ -23,23 +28,22 @@
             &:nth-child(2){margin-left: 50%;}
             &:nth-child(4){margin-left: 25%;}
         }
-
-        a:not(:hover):not(:focus){
-            opacity: .3;
-            @include filter(grayscale(100%));
-        }
     }
 
     @media(max-width: $screen-xs-max){
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
-        margin-left: -#{$padding-base*3};
-        margin-right: -#{$padding-base*3};
+        box-shadow: 0 15px 15px -5px rgba(0,0,0, .1);
 
         li{
             display: inline-block;
             width: 100%;
+        }
+
+        a:not(:hover):not(:focus){
+            opacity: 1;
+            @include filter(grayscale(0));
         }
     }
 }

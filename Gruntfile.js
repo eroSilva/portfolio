@@ -54,10 +54,10 @@ module.exports = function(grunt) {
 	            options: {
 	                url: 'http://localhost/portfolio',
 	                width: 1366,
-	                height: 700,
+	                height: 2000,
 	                outputfile: 'assets/css/critical/critical.css',
 	                filename: 'assets/css/app.css',
-	                buffer: 800*1024,
+	                buffer: 800*1240,
 	                ignoreConsole: false
 	            }
 	        }
