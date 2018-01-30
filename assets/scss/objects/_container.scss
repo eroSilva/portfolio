@@ -54,11 +54,12 @@
         @include flexbox((justify-content: center));
 
         a{
+            color: $white;
             font-size: em(30px);
         }
     }
 
-    a{
+    p a{
         color: $white;
         opacity: 1;
 
