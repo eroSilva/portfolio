@@ -3,13 +3,14 @@
 
 @media print{
     body{
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     .main-subtitle,
     .main-footer,
     .section-projects,
-    .social-links{
+    .social-links,
+    .hidden-print{
         display: none !important;
     }
 
@@ -36,7 +37,7 @@
     }
 
     .main-title{
-        font-size: em(26px) !important;
+        font-size: em(24px) !important;
         font-weight: 700 !important;
     }
 
@@ -45,11 +46,12 @@
     }
     
     .sections{
-        margin: $padding-base*3 0 !important;
+        margin: $padding-base*2.5 0 !important;
 
-        &:last-child{
-            margin-bottom: 0 !important;
-        }
+    }
+    
+    .section-reading{
+        margin-bottom: 0 !important;
     }
 
     .section-title{
@@ -60,7 +62,7 @@
 
     // Elementos que trocam de valor
     [data-print]{
-        color: transparent !importanta;
+        color: transparent !important;
 
         &:before{
             font-family: $base-font-family;
