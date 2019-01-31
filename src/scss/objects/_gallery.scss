@@ -9,17 +9,19 @@
         background: $gray-light;
         padding-bottom: percentage(280/600);
         box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-        @include transition(.2s);
+        transition: .2s;
         @extend %responsive-content;
 
         &:not(:hover):not(:focus){
             opacity: .3;
-            @include filter(grayscale(100%));
+            filter: grayscale(100%);
         }
     }
 
     @media(min-width: $screen-sm-min){
-        @include flexbox((display: flex, flex-wrap: wrap, justify-content: flex-end));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         
         li{
             width: 25%;
@@ -43,7 +45,7 @@
 
         a:not(:hover):not(:focus){
             opacity: 1;
-            @include filter(grayscale(0));
+            filter: grayscale(0);
         }
     }
 }

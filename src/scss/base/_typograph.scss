@@ -20,7 +20,7 @@ a{
     color: $color-text;
     opacity: .7;
     text-decoration: none;
-    @include transition(opacity .2s);
+    transition: opacity .2s;
 
     &:hover,
     &:focus{
@@ -91,7 +91,7 @@ a{
 // Listas
 .social-links{
     @extend %list-style-none;
-    @include flexbox((display: flex));
+    display: flex;
 
     a{
         text-decoration: none;

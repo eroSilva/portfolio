@@ -1,14 +1,29 @@
 {
-  "name": "gosuper",
-  "version": "2.0.0",
-  "title": "Frontend do site da Gosuper Internacional",
-  "description": "Frontend do site da Gosuper Internacional",
+  "name": "portfolio",
+  "version": "1.1.0",
+  "description": "Potifólio pessoal",
+  "main": "index.js",
+  "repository": "https://github.com/eroSilva/portfolio.git",
+  "author": "eroSilva <eronildo.silva@outlook.com>",
+  "license": "MIT",
+  "scripts": {},
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-compass": "^1.1.1",
-    "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-criticalcss": "^2.1.0"
-  }
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.8",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
 }
