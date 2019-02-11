@@ -9,10 +9,10 @@
 
 .main-header{
     color: $color-text;
+    text-align: center;
 
     .social-links{
-        margin-left: -8px;
-        margin-right: -#{round($padding-base/2)};
+        display: inline-flex;
         font-size: em(22px);
     }
 
@@ -21,18 +21,18 @@
     }
 
     @media(min-width: $screen-sm-min){
-        margin: $padding-base*8 0;
+        padding: $padding-base*8 0 $padding-base*4;
     }
 
     @media(max-width: $screen-xs-max){
-        margin: $padding-base*6 0;
+        padding: $padding-base*6 0 $padding-base*3;
     }
 }
 
 .main-content{
     background: $white;
     padding-bottom: 1px;
-    margin-bottom: 105px;
+    margin-bottom: 115px;
     padding-left: $padding-base*3;
     padding-right: $padding-base*3;
 }
@@ -42,30 +42,36 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: $padding-base*2;
+    padding: $padding-base*4 $padding-base*2 $padding-base*3;
     background: $color-text;
     color: $white;
-    font-size: em(14px);
+    font-size: em(16px);
     text-align: center;
-    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 0 15px 30px rgba(0,0,0,0.2);
     z-index: -1;
 
     .social-links{
         justify-content: center;
+        margin-top: 10px;
 
         a{
             color: $white;
-            font-size: em(30px);
+            font-size: em(20px);
         }
     }
 
-    p a{
-        color: $white;
-        opacity: 1;
+    p {
+        margin: 0;
 
-        &:hover,
-        &:focus{
-            text-decoration: underline;
+        a{
+            color: $white;
+            opacity: 1;
+    
+            &:hover,
+            &:focus{
+                text-decoration: underline;
+            }
         }
     }
+
 }

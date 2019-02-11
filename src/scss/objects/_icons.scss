@@ -1,0 +1,66 @@
+$icons: (
+	
+		'facebook': '\E001',
+	
+		'github': '\E002',
+	
+		'linkedin': '\E003',
+	
+		'twitter': '\E004',
+	
+);
+
+@font-face {
+	font-family: 'erosilva-icons';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/erosilva-icons.eot'),
+	url('../fonts/erosilva-icons.eot?#iefix&') format('embedded-opentype'),
+	url('../fonts/erosilva-icons.woff?') format('woff'),
+	url('../fonts/erosilva-icons.ttf?') format('truetype'),
+	url('../fonts/erosilva-icons.woff2?') format('woff2'),
+	url('../fonts/erosilva-icons.svg#erosilva-icons?') format('svg');
+}
+
+.icon {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'erosilva-icons';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+	@each $key,
+	$value in $icons {
+		&.icon-#{$key}:before {
+			content: $value
+		}
+	};
+
+	&-triangle {
+		&:before {
+			border-color: transparent transparent #BBBBBB transparent;
+			border-style: solid;
+			border-width: 0 5px 5px 5px;
+			content: '';
+			display: inline-block;
+			height: 0;
+			width: 0;
+		}
+	}
+}
+
+@mixin icon-get( $icon) {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	content: map-get($icons, $icon);
+	font-family: 'erosilva-icons' !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	font-weight: normal !important;
+	line-height: 1;
+	speak: none;
+	text-transform: none !important;
+};
