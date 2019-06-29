@@ -1,8 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-RewriteRule ^$ views/index.html [L]
-RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|svg|css|js|map|woff|ttf|xml|ico|json)$
-RewriteRule .* /index.html [L]
