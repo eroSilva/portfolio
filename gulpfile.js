@@ -94,9 +94,12 @@ exports.clean = clean;
 exports.extras = extras;
 exports.styles = styles;
 exports.icons = icons;
+
 exports.default = series(
     clean,
     icons, 
     parallel(images, styles, extras),
     parallel(serve, sync)
 );
+
+exports.build = series( clean, icons, images, styles, extras );
